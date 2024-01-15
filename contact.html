@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <!-- Title -->
+        <title>Contact Me</title>
+        <!-- Meta -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Let's talk to me">
+        <meta name="keywords" content="Contact, Mattia Righini">
+        <meta name="author" content="Mattia Righini">
+        <!-- Open Graph FB -->
+        <meta property="og:title" content="Contact Me | Mattia Righini">
+        <meta property="og:description" content="Let's talk to me">
+        <meta property="og:url" content="">
+        <meta property="og:image" content="">
+        <!-- Open Graph X -->
+        <meta property="twitter:title" content="Contact Me | Mattia Righini">
+        <meta property="twitter:description" content="Let's talk to me">
+        <meta name="twitter:site" content="">
+        <meta name="twitter:card" content="">
+        <!-- Favicon -->
+        <link rel="icon" href="assets/img/favicon.svg" type="image/svg">
+        <!-- External -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"/>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">(function(){emailjs.init("NJTef4GNoq8FqlLyH");})();</script>
+        <!-- EmailJS -->
+        <script type="text/javascript">
+            window.onload = function() {
+                document.getElementById('contact-form').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    this.contact_number.value = Math.random() * 100000 | 0;
+                    emailjs.sendForm('service_75a38y2', 'contact-me', this)
+                        .then(function() {
+                            console.log('SUCCESS!');
+                            document.getElementById('contact-form').reset();
+                        }, function(error) {
+                            console.log('FAILED...', error);
+                        });
+                });
+            }
+        </script>
+        <!-- Internal -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./assets/img/mr-logo.svg" alt="mr-logo-letter" width="60" height="48">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-justify"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav py-3">
+                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        <a class="nav-link" href="about-me.html">About Me</a>
+                        <div class="text-center"><a class="btn btn-light" href="contact.html">Let's Talk</a></div>
+                        
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main>
+        <!-- Contact -->
+        <section id="contact">
+            <div class="container py-5">
+                <h1 class="pb-5">Contact Me</h1>
+                <form class="row gy-4 gx-5" id="contact-form">
+                    <input type="hidden" name="contact_number">
+                    <!-- Full name -->
+                    <div class="col-6">
+                        <label class="form-label">Full Name:</label>
+                        <input type="text" name="from_name" class="form-control" required>
+                    </div>
+                    <!-- Company -->
+                    <div class="col-6">                       
+                        <label class="form-label">Company:</label>
+                        <input type="text" name="company" class="form-control" required>
+                    </div>
+                    <!-- Email -->
+                    <div class="col-6">  
+                        <label class="form-label">Email:</label>
+                        <input type="email" name="email" class="form-control" required>
+                    </div>
+                    <!-- Phone -->
+                    <div class="col-6">
+                        <label class="form-label">Phone:</label>
+                        <input type="text" name="phone" class="form-control" required>
+                    </div>
+                    <!-- Message -->
+                    <div class="col-12">
+                        <label class="form-label">Message:</label>
+                        <textarea type="text" name="message" class="form-control" required></textarea>
+                    </div>
+                    <!-- Submit -->
+                    <div class="col-12 text-center mt-5">
+                        <button type="submit" value="Send" class="btn btn-outline-light btn-md">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row text-center">
+                    <!-- Social -->
+                    <div class="col py-3">  
+                        <a href="https://www.instagram.com/headofmatt"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com/headofmatt"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/mattiarighini"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/mattiarighinidev"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+                <hr>
+                <!-- Copyright -->
+                <div class="col py-3 text-center">
+                    <p>© 2024 Copyright: Mattia Righini</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

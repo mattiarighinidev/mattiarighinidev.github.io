@@ -28,23 +28,24 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
         <!-- Internal -->
         <link rel="stylesheet" href="./assets/css/style.css">
+        <script src=./assets/js/script.js></script>
     </head>
     <body>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="./assets/img/mr-logo.svg" alt="mr-logo-letter" width="60" height="48">
+                    <img src="./assets/img/mr-logo.svg" alt="mr-logo-letter">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="bi bi-justify"></i>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav py-3">
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
                         <a class="nav-link" href="index.html">Home</a>
                         <a class="nav-link" href="portfolio.html">Portfolio</a>
                         <a class="nav-link" href="about-me.html">About Me</a>
-                        <div class="text-center"><a class="btn btn-light" href="contact.html">Let's Talk</a></div>
+                        <span><a class="btn btn-light" href="contact.html">Let's Talk</a></span>
                     </div>
                 </div>
             </div>
@@ -54,21 +55,21 @@
             <section id="portfolio">
                 <div class="container">
                     <!-- Intro -->
-                    <div class="title text-center py-5">
-                        <h1 class="mb-3"><strong>Portfolio</strong></h1>
-                        <h3 class="text-secondary">Discover now <strong>+25 Projects</strong> in <br class="d-sm-none">multiple fields of the digital world</h3>
+                    <div class="title">
+                        <h1><strong>Portfolio</strong></h1>
+                        <h3>Discover now <strong>+25 Projects</strong> in <br class="d-sm-none">multiple fields of the digital world</h3>
                     </div>
                     <!-- Category -->
-                    <div class="row row-cols-1 row-cols-md-2 g-5 pb-5">
+                    <div class="row row-cols-1 row-cols-md-2">
                         <!-- Digital Marketing -->
                         <div class="col">
                             <div class="card">
                                 <img src="assets/img/digital-marketing.jpeg" class="card-img-top" alt="human-finger-indicates-power-of-digital-communication">
                                 <div class="card-body">
-                                    <h3 class="card-title">Digital Marketing</h3>
-                                    <p class="card-text py-3">Learn more about this area by looking at the skills needed to grow business through activities focused on <strong>Ecommerce</strong> development and <strong>Social Media</strong> management.</p>
-                                    <a href="https://drive.google.com/drive/folders/11NqP5UTblOzCupwaXG4zE8rlciw7kP7E" target="_blank" class="btn btn-outline-light mt-2 px-3 me-1">View works</a>
-                                    <a href="https://drive.google.com/drive/folders/1-f2oQi4-wAqS70YEovg1FavL9_vP-zoz" target="_blank" class="btn btn-light mt-2 px-">Master Project</a>
+                                    <h3>Digital Marketing</h3>
+                                    <p class="card-text">Learn more about this area by looking at the skills needed to grow business through activities focused on <strong>Ecommerce</strong> development and <strong>Social Media</strong> management.</p>
+                                    <a href="https://drive.google.com/drive/folders/11NqP5UTblOzCupwaXG4zE8rlciw7kP7E" rel="noopener" target="_blank" class="btn btn-outline-light">View works</a>
+                                    <a href="https://drive.google.com/drive/folders/1-f2oQi4-wAqS70YEovg1FavL9_vP-zoz" rel="noopener" target="_blank" class="btn btn-light">Master Project</a>
                                 </div>
                             </div>
                         </div>
@@ -77,9 +78,9 @@
                             <div class="card">
                                 <img src="assets/img/web-development.jpeg" class="card-img-top" alt="human-hands-hold-computer-with-web-code-on-display">
                                 <div class="card-body">
-                                    <h3 class="card-title">Web Development</h3>
-                                    <p class="card-text py-3">Learn more about this area by looking at the skills needed to develop <strong>Mobile Apps</strong>, design <strong>Responsive Websites</strong>, and implement decentralized systems using <strong>Blockchain</strong>.</p>
-                                    <a href="https://drive.google.com/drive/folders/1LwuWDH3o_D1lPM6kafiyAGNmHCkyBmEu" target="_blank" class="btn btn-outline-light mt-2 px-3">View works</a>
+                                    <h3>Web Development</h3>
+                                    <p class="card-text">Learn more about this area by looking at the skills needed to develop <strong>Mobile Apps</strong>, design <strong>Responsive Websites</strong>, and implement decentralized systems using <strong>Blockchain</strong>.</p>
+                                    <a href="https://drive.google.com/drive/folders/1LwuWDH3o_D1lPM6kafiyAGNmHCkyBmEu" rel="noopener" target="_blank" class="btn btn-outline-light">View works</a>
                                 </div>
                             </div>
                         </div>
@@ -88,9 +89,9 @@
                             <div class="card">
                                 <img src="assets/img/ux-ui-design.jpeg" class="card-img-top" alt="human-hands-hold-color-paiette-and-wireframe-card-prototype">
                                 <div class="card-body">
-                                    <h3 class="card-title">UX/UI Design</h3>
-                                    <p class="card-text py-3">Learn more about this area, looking at the skills needed to design solutions by putting people at the center of everything, to make their <strong>Online Experience</strong> unique.</p>
-                                    <a href="https://drive.google.com/drive/folders/1a5FVdCT2k2AFhqhBwT3mJYT0z1xag9bE" target="_blank" class="btn btn-outline-light mt-2">View works</a>
+                                    <h3>UX/UI Design</h3>
+                                    <p class="card-text">Learn more about this area, looking at the skills needed to design solutions by putting people at the center of everything, to make their <strong>Online Experience</strong> unique.</p>
+                                    <a href="https://drive.google.com/drive/folders/1a5FVdCT2k2AFhqhBwT3mJYT0z1xag9bE" rel="noopener" target="_blank" class="btn btn-outline-light">View works</a>
                                 </div>
                             </div>
                         </div>
@@ -99,9 +100,9 @@
                             <div class="card">
                                 <img src="assets/img/data-analysis.jpeg" class="card-img-top" alt="bionic-hands-hold-hologram-brain">
                                 <div class="card-body">
-                                    <h3 class="card-title">Data Science</h3>
-                                    <p class="card-text py-3">Learn more about this area, looking at the skills needed to implement <strong>Statistical Models</strong> to predict the future and represent data through <strong>Interactive Graphs</strong>.</p>
-                                    <a href="https://drive.google.com/drive/folders/1oXVxzm44gOqqk7y376N3ZkCHOM5EExSt" target="_blank" class="btn btn-outline-light mt-2">View works</a>
+                                    <h3>Data Science</h3>
+                                    <p class="card-text">Learn more about this area, looking at the skills needed to implement <strong>Statistical Models</strong> to predict the future and represent data through <strong>Interactive Graphs</strong>.</p>
+                                    <a href="https://drive.google.com/drive/folders/1oXVxzm44gOqqk7y376N3ZkCHOM5EExSt" rel="noopener" target="_blank" class="btn btn-outline-light">View works</a>
                                 </div>
                             </div>
                         </div>
@@ -111,19 +112,17 @@
         </main>
         <!-- Footer -->
         <footer>
-            <div class="container py-2">
-                <div class="row text-center">
-                    <!-- Social -->
-                    <div class="col py-3">  
-                        <a href="https://www.instagram.com/headofmatt"><i class="bi bi-instagram"></i></a>
-                        <a href="https://www.facebook.com/headofmatt"><i class="bi bi-facebook"></i></a>
-                        <a href="https://www.linkedin.com/in/mattiarighini"><i class="bi bi-linkedin"></i></a>
-                        <a href="https://github.com/mattiarighinidev"><i class="bi bi-github"></i></a>
-                    </div>
+            <div class="container">
+                <!-- Social -->
+                <div class="col">  
+                    <a href="https://www.instagram.com/headofmatt" rel="noopener" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.facebook.com/headofmatt" rel="noopener" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/mattiarighini" rel="noopener" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/mattiarighinidev" rel="noopener" target="_blank"><i class="bi bi-github"></i></a>
                 </div>
                 <hr>
                 <!-- Copyright -->
-                <div class="col py-3 text-center">
+                <div class="col">
                     <p>© 2024 Copyright: Mattia Righini</p>
                 </div>
             </div>

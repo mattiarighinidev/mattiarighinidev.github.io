@@ -28,24 +28,24 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
         <!-- Internal -->
         <link rel="stylesheet" href="./assets/css/style.css">
+        <script src=./assets/js/script.js></script>
     </head>
     <body>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="./assets/img/mr-logo.svg" alt="mr-logo-letter" width="60" height="48">
+                    <img src="./assets/img/mr-logo.svg" alt="mr-logo-letter">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="bi bi-justify"></i>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav py-3">
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
                         <a class="nav-link" href="index.html">Home</a>
                         <a class="nav-link" href="portfolio.html">Portfolio</a>
                         <a class="nav-link" href="about-me.html">About Me</a>
-                        <div class="text-center"><a class="btn btn-light" href="contact.html">Let's Talk</a></div>
-                        
+                        <span><a class="btn btn-light" href="contact.html">Let's Talk</a></span>
                     </div>
                 </div>
             </div>
@@ -53,60 +53,60 @@
         <main>
             <!-- About Me -->
             <section id="background">
-                <div class="container py-5">
+                <div class="container">
                     <div class="row">
                         <div class="col-lg-4 col-12">
                             <!-- Profile -->
-                            <div class="pic mobile mb-3">
+                            <div class="pic">
                                 <img src="assets/img/mattia-righini.jpeg" class="rounded-circle img-mobile" alt="mattia-righini-profile-picture">
-                                <h1 class="my-3">Mattia Righini</h1>
-                                <h3 class="my-3">Growth Hacker</h3>
-                                <p class="pt-3">My strength lies in the <strong>multidisciplinary</strong> approach, due to the combination of skills acquired in different fields and aimed at the development of <strong>growth strategies</strong>.</p>
+                                <h1>Mattia Righini</h1>
+                                <h3>Growth Hacker</h3>
+                                <p>My strength lies in the <strong>multidisciplinary</strong> approach, due to the combination of skills acquired in different fields and aimed at the development of <strong>growth strategies</strong>.</p>
                             </div>
                             <!-- Skillset -->
-                            <div class="skill py-3">
+                            <div class="skill">
                                 <!-- Digital Marketing -->
-                                <h4 class="mb-2">Digital Marketing</h4>
-                                <div class="progress mb-4" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar bg-light" style="width: 90%"></div>
+                                <h4>Digital Marketing</h4>
+                                <div class="progress" role="progressbar">
+                                    <div class="progress-bar bg-light mkt"></div>
                                 </div>
                                 <!-- Web Development -->
-                                <h4 class="mb-2">Web Development</h4>
-                                <div class="progress mb-4" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar bg-light" style="width: 40%"></div>
+                                <h4>Web Development</h4>
+                                <div class="progress" role="progressbar">
+                                    <div class="progress-bar bg-light wbd"></div>
                                 </div>
                                 <!-- UX/UI Design -->
-                                <h4 class="mb-2">UX/UI Design</h4>
-                                <div class="progress mb-4" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar bg-light" style="width: 40%"></div>
+                                <h4>UX/UI Design</h4>
+                                <div class="progress" role="progressbar">
+                                    <div class="progress-bar bg-light ux-ui"></div>
                                 </div>
                                 <!-- Data Science -->
-                                <h4 class="mb-2">Data Science</h4>
-                                <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar bg-light" style="width: 30%"></div>
+                                <h4>Data Science</h4>
+                                <div class="progress" role="progressbar">
+                                    <div class="progress-bar bg-light ds"></div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-8 col-12">
-                            <hr class="my-4 desktop">
+                            <hr>
                             <!-- About Me -->
-                            <div class="about-me desktop">
-                                <h2 class="">About Me</h2>
-                                <p class="py-3">I am Mattia Righini, a curious person interested in digitalization with the main focus on sustainable business growth and innovation.</p>
-                                <p class="pb-3">I like to keep myself updated on new trends and directions in the markets in order to make targeted decisions and take advantage.</p>
-                                <p class="pb-3">Good problem solving skills, empathy and thinking outside the box help me in all kinds of interpersonal relationships inside and outside the workplace.</p>
+                            <div class="about-me">
+                                <h2>About Me</h2>
+                                <p>I am Mattia Righini, a curious person interested in digitalization with the main focus on sustainable business growth and innovation.</p>
+                                <p>I like to keep myself updated on new trends and directions in the markets in order to make targeted decisions and take advantage.</p>
+                                <p>Good problem solving skills, empathy and thinking outside the box help me in all kinds of interpersonal relationships inside and outside the workplace.</p>
                                 <!-- Button -->
-                                <a class="btn btn-light my-2 px-4" href="contact.html" role="button">Let's Talk</a>
+                                <a class="btn btn-light" href="contact.html" role="button">Let's Talk</a>
                             </div>
-                            <hr class="mt-4 desktop">
+                            <hr>
                             <!-- Education -->
-                            <div class="education mt-4 desktop">
-                                <h2 class="">Education</h2>
-                                <p class="py-3">My journey into the digital world began completely independently when I was still in high school, buying and selling products on major online marketplaces.</p>
-                                <p class="pb-3">This was the initial push that gave me the opportunity to pursue a course of study aimed at developing the soft and hard skills needed to operate in the digital sector.</p>
-                                <p class="pb-3"><a href="https://www.start2impact.it/" target="_blank"><strong>Start2impact University</strong></a> was the key to unlocking my potential. It helped me in my education by acquiring valuable theoretical concepts, which I could consolidate by developing practical projects, now available in my portfolio!</p>
+                            <div class="education">
+                                <h2>Education</h2>
+                                <p>My journey into the digital world began completely independently when I was still in high school, buying and selling products on major online marketplaces.</p>
+                                <p>This was the initial push that gave me the opportunity to pursue a course of study aimed at developing the soft and hard skills needed to operate in the digital sector.</p>
+                                <p><a href="https://www.start2impact.it/" rel="noopener" target="_blank"><strong>Start2impact University</strong></a> was the key to unlocking my potential. It helped me in my education by acquiring valuable theoretical concepts, which I could consolidate by developing practical projects, now available in my portfolio!</p>
                                 <!-- Button -->
-                                <a class="btn btn-outline-light my-2 px-3" href="portfolio.html" role="button">View Portfolio</a>
+                                <a class="btn btn-outline-light" href="portfolio.html" role="button">View Portfolio</a>
                             </div>
                         </div>
                     </div>
@@ -116,18 +116,16 @@
         <!-- Footer -->
         <footer>
             <div class="container">
-                <div class="row text-center">
-                    <!-- Social -->
-                    <div class="col py-3">  
-                        <a href="https://www.instagram.com/headofmatt"><i class="bi bi-instagram"></i></a>
-                        <a href="https://www.facebook.com/headofmatt"><i class="bi bi-facebook"></i></a>
-                        <a href="https://www.linkedin.com/in/mattiarighini"><i class="bi bi-linkedin"></i></a>
-                        <a href="https://github.com/mattiarighinidev"><i class="bi bi-github"></i></a>
-                    </div>
+                <!-- Social -->
+                <div class="col">  
+                    <a href="https://www.instagram.com/headofmatt" rel="noopener" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.facebook.com/headofmatt" rel="noopener" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/mattiarighini" rel="noopener" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/mattiarighinidev" rel="noopener" target="_blank"><i class="bi bi-github"></i></a>
                 </div>
                 <hr>
                 <!-- Copyright -->
-                <div class="col py-3 text-center">
+                <div class="col">
                     <p>© 2024 Copyright: Mattia Righini</p>
                 </div>
             </div>

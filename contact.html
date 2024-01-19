@@ -27,42 +27,26 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"/>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-        <script type="text/javascript">(function(){emailjs.init("NJTef4GNoq8FqlLyH");})();</script>
-        <!-- EmailJS -->
-        <script type="text/javascript">
-            window.onload = function() {
-                document.getElementById('contact-form').addEventListener('submit', function(event) {
-                    event.preventDefault();
-                    this.contact_number.value = Math.random() * 100000 | 0;
-                    emailjs.sendForm('service_75a38y2', 'contact-me', this)
-                        .then(function() {
-                            console.log('SUCCESS!');
-                            document.getElementById('contact-form').reset();
-                        }, function(error) {
-                            console.log('FAILED...', error);
-                        });
-                });
-            }
-        </script>
         <!-- Internal -->
         <link rel="stylesheet" href="./assets/css/style.css">
+        <script src=./assets/js/script.js></script>
     </head>
     <body>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="./assets/img/mr-logo.svg" alt="mr-logo-letter" width="60" height="48">
+                    <img src="./assets/img/mr-logo.svg" alt="mr-logo-letter">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="bi bi-justify"></i>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav py-3">
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
                         <a class="nav-link" href="index.html">Home</a>
                         <a class="nav-link" href="portfolio.html">Portfolio</a>
                         <a class="nav-link" href="about-me.html">About Me</a>
-                        <div class="text-center"><a class="btn btn-light" href="contact.html">Let's Talk</a></div>
+                        <span><a class="btn btn-light" href="contact.html">Let's Talk</a></span>
                         
                     </div>
                 </div>
@@ -71,9 +55,9 @@
         <main>
         <!-- Contact -->
         <section id="contact">
-            <div class="container py-5">
-                <h1 class="pb-5">Contact Me</h1>
-                <form class="row gy-4 gx-5" id="contact-form">
+            <div class="container">
+                <h1>Contact Me</h1>
+                <form class="row" id="contact-form">
                     <input type="hidden" name="contact_number">
                     <!-- Full name -->
                     <div class="col-6">
@@ -93,7 +77,7 @@
                     <!-- Phone -->
                     <div class="col-6">
                         <label class="form-label">Phone:</label>
-                        <input type="text" name="phone" class="form-control" required>
+                        <input type="text" name="phone" class="form-control" pattern="[0-9+\-\s]*" required>
                     </div>
                     <!-- Message -->
                     <div class="col-12">
@@ -101,7 +85,7 @@
                         <textarea type="text" name="message" class="form-control" required></textarea>
                     </div>
                     <!-- Submit -->
-                    <div class="col-12 text-center mt-5">
+                    <div class="col-12 button">
                         <button type="submit" value="Send" class="btn btn-outline-light btn-md">Send Message</button>
                     </div>
                 </form>
@@ -111,18 +95,16 @@
         <!-- Footer -->
         <footer>
             <div class="container">
-                <div class="row text-center">
-                    <!-- Social -->
-                    <div class="col py-3">  
-                        <a href="https://www.instagram.com/headofmatt"><i class="bi bi-instagram"></i></a>
-                        <a href="https://www.facebook.com/headofmatt"><i class="bi bi-facebook"></i></a>
-                        <a href="https://www.linkedin.com/in/mattiarighini"><i class="bi bi-linkedin"></i></a>
-                        <a href="https://github.com/mattiarighinidev"><i class="bi bi-github"></i></a>
-                    </div>
+                <!-- Social -->
+                <div class="col">  
+                    <a href="https://www.instagram.com/headofmatt" rel="noopener" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.facebook.com/headofmatt" rel="noopener" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/mattiarighini" rel="noopener" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/mattiarighinidev" rel="noopener" target="_blank"><i class="bi bi-github"></i></a>
                 </div>
                 <hr>
                 <!-- Copyright -->
-                <div class="col py-3 text-center">
+                <div class="col">
                     <p>© 2024 Copyright: Mattia Righini</p>
                 </div>
             </div>

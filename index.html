@@ -28,24 +28,24 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
         <!-- Internal -->
         <link rel="stylesheet" href="./assets/css/style.css">
+        <script src=./assets/js/script.js></script>
     </head>
     <body>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="./assets/img/mr-logo.svg" alt="mr-logo-letter" width="60" height="48">
+                    <img src="./assets/img/mr-logo.svg" alt="mr-logo-letter">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="bi bi-justify"></i>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav py-3">
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
                         <a class="nav-link" href="index.html">Home</a>
                         <a class="nav-link" href="portfolio.html">Portfolio</a>
                         <a class="nav-link" href="about-me.html">About Me</a>
-                        <div class="text-center"><a class="btn btn-light" href="contact.html">Let's Talk</a></div>
-                        
+                        <span><a class="btn btn-light" href="contact.html">Let's Talk</a></span> 
                     </div>
                 </div>
             </div>
@@ -53,48 +53,48 @@
         <main>
             <!-- Hero -->
             <section id="hero">
-                <div class="container my-5 d-flex align-items-center">
+                <div class="container">
                     <div class="row">
-                        <div class="pic col-12 col-md-5 text-center">
+                        <div class="pic col-12 col-md-6">
                             <img src="assets/img/mattia-righini.jpeg" class="rounded" alt="mattia-righini-profile-picture">
                         </div>
-                        <div class=" text col-12 col-md-7">
-                            <h1 class="my-2">Mattia Righini | <br class="d-sm-none">Growth Hacker</h1>
-                            <p class="pb-3 pt-1">Hello and welcome!</p>
-                            <p class="pb-3">I am Mattia Righini, a Growth Hacker that working in different areas within businesses due to knowledge in different fields of the digital world.</p>
-                            <p class=""><strong>Innovation</strong> and <strong>growth</strong> are my main goals to support companies in all their development, sales and market presence processes.</p>
+                        <div class="text col-12 col-md-6">
+                            <h1>Mattia Righini | <br class="d-sm-none">Growth Hacker</h1>
+                            <p>Hello and welcome!</p>
+                            <p>I am Mattia Righini, a Growth Hacker that working in different areas within businesses due to knowledge in different fields of the digital world.</p>
+                            <p><strong>Innovation</strong> and <strong>growth</strong> are my main goals to support companies in all their development, sales and market presence processes.</p>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- Space -->
             <div class="container">
-                <hr class="mx-5">
+                <hr>
             </div>
             <!-- Category -->
             <section id="category">
                 <div class="container">
-                    <div class="row row-cols-1 row-cols-lg-2 text-center text-white my-4">
-                        <div class="col my-4">
-                            <div class="card border-secondary" style="height: 300px;">
-                                <img src="assets/img/bg.jpeg" class="card-img" alt="dark-background-painted" style="object-fit: cover; height: 100%;">
-                                <div class="card-img-overlay d-flex align-items-center" style="background-color: rgba(0, 0, 0, 0.6);">
-                                    <div class="w-100">
-                                        <h2 class="pt-3">Portfolio</h2>
-                                        <p class="py-3">Discover <strong>+25 Projects</strong> available in <br>multiple fields of the digital world</p>
-                                        <a class="btn btn-outline-light mt-3" href="portfolio.html" role="button">View works</a>
+                    <div class="row row-cols-1 row-cols-lg-2">
+                        <div class="col">
+                            <div class="card">
+                                <img src="assets/img/bg.jpeg" alt="dark-background-painted">
+                                <div class="card-img-overlay">
+                                    <div>
+                                        <h2>Portfolio</h2>
+                                        <p>Discover <strong>+25 Projects</strong> available in <br>multiple fields of the digital world</p>
+                                        <a class="btn btn-outline-light" href="portfolio.html" role="button">View works</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col my-4">
-                            <div class="card border-secondary" style="height: 300px;">
-                                <img src="assets/img/bg.jpeg" class="card-img" alt="dark-background-painted" style="object-fit: cover; height: 100%;">
-                                <div class="card-img-overlay d-flex align-items-center" style="background-color: rgba(0, 0, 0, 0.6);">
-                                    <div class="w-100">
-                                        <h2 class="pt-3">About Me</h2>
-                                        <p class="py-3">Learn about my <strong>background</strong> that led me <br>to develop a variety of <strong>hard</strong> & <strong>soft</strong> skills</p>
-                                        <a class="btn btn-outline-light mt-3" href="about-me.html" role="button">View bio</a>
+                        <div class="col">
+                            <div class="card">
+                                <img src="assets/img/bg.jpeg" alt="dark-background-painted">
+                                <div class="card-img-overlay">
+                                    <div>
+                                        <h2>About Me</h2>
+                                        <p>Learn about my <strong>background</strong> that led me <br>to develop a variety of <strong>hard</strong> & <strong>soft</strong> skills</p>
+                                        <a class="btn btn-outline-light" href="about-me.html" role="button">View bio</a>
                                     </div>
                                 </div>
                             </div>
@@ -105,19 +105,17 @@
         </main>   
         <!-- Footer -->
         <footer>
-            <div class="container py-2">
-                <div class="row text-center">
-                    <!-- Social -->
-                    <div class="col py-3">  
-                        <a href="https://www.instagram.com/headofmatt"><i class="bi bi-instagram"></i></a>
-                        <a href="https://www.facebook.com/headofmatt"><i class="bi bi-facebook"></i></a>
-                        <a href="https://www.linkedin.com/in/mattiarighini"><i class="bi bi-linkedin"></i></a>
-                        <a href="https://github.com/mattiarighinidev"><i class="bi bi-github"></i></a>
-                    </div>
+            <div class="container">
+                <!-- Social -->
+                <div class="col">  
+                    <a href="https://www.instagram.com/headofmatt" rel="noopener" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.facebook.com/headofmatt" rel="noopener" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/mattiarighini" rel="noopener" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/mattiarighinidev" rel="noopener" target="_blank"><i class="bi bi-github"></i></a>
                 </div>
                 <hr>
                 <!-- Copyright -->
-                <div class="col py-3 text-center">
+                <div class="col">
                     <p>© 2024 Copyright: Mattia Righini</p>
                 </div>
             </div>

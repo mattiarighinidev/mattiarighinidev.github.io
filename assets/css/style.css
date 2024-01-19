@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #101010;
+    hr {
+        margin: 0;
+    }
+    strong {
+        color: white;
+    }
+    hr {
+        margin: 0 3rem;
+    }
+    h1 {
+        margin: 0;
+        font-size: 35px;
+        color: white;
+    }
+    h2 {
+        margin: 0;
+        font-size: 25px;
+        color: white;
+    }
+    h3 {
+        margin: 0;
+        font-size: 20px;
+        color: white;
+    }
+    h4 {
+        margin: 0;
+        font-size: 16px;
+        color: white;
+    }
+    p {
+        margin: 0;
+        font-size: 16px;
+    }
+    a {
+        text-decoration: none;
+    }
+    .row {
+        align-items: center;
+    }
+}
+
+nav {
+    img {
+        width: 60px;
+        height: 48px;
+    }
+    .navbar-toggler {
+        border: none;
+    }
+    .collapse {
+        justify-content: end;
+    }
+    .navbar-nav {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .nav-link {
+        margin-right: 20px;
+        @media (max-width: 991px) {
+            text-align: center;
+            margin: 0 0 10px;
+        }
+    }
+    span {
+        text-align: center;
+    }                      
+}                           
+
+main {
+    padding-bottom: 113px; /* Altezza del footer */
+    .container {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    /* Index */
+    #hero {
+        .pic {
+            text-align: center;
+            img {
+                border-style: outset;
+            }
+        }
+        h1 {
+            margin: 0.5rem 0;
+        }
+        p {
+            padding-bottom: 1rem;
+        }
+        @media (max-width: 767px) {
+            .col-12 {
+                text-align: center;
+                margin-top: 2rem;
+            }
+        }
+    }
+    #category {
+        .col {
+            margin: 1rem 0;
+        }
+        .card {
+            height: 20rem;
+            text-align: center;
+            img {
+                object-fit: cover;
+                height: 100%;
+            }
+            .card-img-overlay {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(0, 0, 0, 0.6);;
+            }
+            p {
+                margin-top: 1.2rem;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+    /* Portfolio */
+    #portfolio {
+        .title {
+            padding: 3rem;
+            text-align: center;
+            h1 {
+                margin-bottom: 1.2rem;
+            }
+            h3 {
+                color: #6C757D;
+            }
+        }
+        .row {
+            --bs-gutter-x: 3rem;
+            --bs-gutter-y: 3rem;
+            padding-bottom: 3rem;
+        }
+        p {
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .btn-light {
+            margin-left: 0.5rem;
+        }
+    }
+    /* About Me */
+    #background {
+        .pic {
+            margin-bottom: 1rem;
+            h1, h2 {
+                margin: 1rem 0;
+            }
+            p {
+                padding-top: 1rem;
+            }
+        }
+        .skill {
+            padding: 1rem 0;
+            h4 {
+                margin-bottom: 0.5rem;
+            }
+            .progress {
+                margin-bottom: 1.5rem;
+                .mkt {
+                    width: 80%;
+                }
+                .wbd {
+                    width: 20%;
+                }
+                .ux-ui {
+                    width: 20%;
+                }
+                .ds {
+                    width: 20%;
+                }
+            }
+        }
+        hr {
+            margin: 0;
+        }
+        .about-me, .education {
+            h2 {
+                margin: 1rem 0;
+            }
+            p {
+                margin-bottom: 1rem;
+            }
+            .btn {
+                margin-top: 0.5rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+
+
+
+
+
+
+
+        @media (min-width: 992px) {
+            .about-me, .education, hr {
+                margin: 0 5rem;
+            }
+        }
+        @media (max-width: 767px) {
+            .pic {
+                text-align: center;
+            }
+            p {
+                text-align: start;
+            }
+        }
+    }
+    /* Contact Me */
+    #contact {
+        h1 {
+            margin-bottom: 3rem;
+        }
+        .row {
+            --bs-gutter-x: 3rem;
+            --bs-gutter-y: 1.5rem;
+        }
+        .button {
+            text-align: center;
+            margin-top: 2.5rem;
+        }
+    }
+}
+
+
+
+footer {
+    background-color: #101010;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    .col {
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    a {
+        margin: 0px 10px;
+    }
+    i {
+        color: white;
+    }
+}
